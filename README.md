@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portofolio Rifqy Kurniawan Fattahillah
 
 Website portofolio personal Rifqy Kurniawan Fattahillah (Mahasiswa Informatika UNSIKA, Web & Database Developer, Bekasi, Jawa Barat). Dibangun menggunakan HTML, CSS, dan JavaScript murni tanpa framework atau build tool.
@@ -36,3 +37,6 @@ Buka `index.html` langsung di browser atau jalankan server statis lokal:
 ```bash
 npx serve .
 ```
+=======
+# Portfolio
+>>>>>>> 300856cf78da89c7957d7b9a08ddaae26aff50b8
