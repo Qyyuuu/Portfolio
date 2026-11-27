@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rifqy Kurniawan Fattahillah | Web &amp; Database Developer</title>
+  <meta name="description" content="Portofolio Rifqy Kurniawan Fattahillah, mahasiswa Informatika UNSIKA dan pengembang web serta basis data berbasis di Bekasi, Jawa Barat." />
+  <meta name="author" content="Rifqy Kurniawan Fattahillah" />
+  <meta name="theme-color" content="#07090e" />
+  <meta name="color-scheme" content="dark" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rifqy Kurniawan Fattahillah | Web &amp; Database Developer" />
+  <meta property="og:description" content="Portofolio resmi Rifqy Kurniawan Fattahillah: proyek web front-end, sistem CRUD basis data, pengalaman organisasi HIMTIKA UNSIKA, dan CV." />
+  <meta property="og:locale" content="id_ID" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%2307090e'/%3E%3Ctext x='50' y='67' font-family='sans-serif' font-size='52' font-weight='700' text-anchor='middle' fill='%2322d3ee'%3ER%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="#home" aria-label="Rifqy Kurniawan Fattahillah, beranda">
+        rifqy<span class="brand__dot">.</span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="Navigasi utama">
+        <a href="#about" class="nav__link">Tentang</a>
+        <a href="#skills" class="nav__link">Keahlian</a>
+        <a href="#experience" class="nav__link">Pengalaman Kerja</a>
+        <a href="#organization" class="nav__link">Organisasi</a>
+        <a href="#cv" class="nav__link">CV</a>
+        <a href="#contact" class="nav__link">Kontak</a>
+      </nav>
+
+      <a href="cv.html" class="btn btn--ghost btn--sm header__cta">Buka CV</a>
+
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Buka menu navigasi">
+        <span class="nav-toggle__bars" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+  <main id="main" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__kicker">Mahasiswa Informatika UNSIKA · Bekasi, Jawa Barat</p>
+
+          <h1 class="hero__title">
+            Rifqy Kurniawan<br />
+            <span class="hero__accent">Fattahillah</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Web &amp; Database Developer (Front-End, PHP, MySQL, SDLC)
+          </p>
+
+          <p class="hero__desc">
+            Saya merancang antarmuka web yang rapi serta membangun sistem pengelolaan data
+            relasional yang terstruktur. Saat ini menempuh studi S1 Informatika di Universitas
+            Singaperbangsa Karawang dan memimpin Divisi Edukasi HIMTIKA UNSIKA.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#experience" class="btn btn--primary">Lihat Pengalaman Kerja</a>
+            <a href="cv.html" class="btn btn--outline">Lihat &amp; Cetak CV</a>
+            <a href="#contact" class="btn btn--text">Hubungi Saya</a>
+          </div>
+
+          <ul class="socials" aria-label="Tautan profil dan kontak">
+            <li>
+              <a href="https://github.com/Qyyuuu" target="_blank" rel="noopener noreferrer" aria-label="GitHub Qyyuuu">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.25.98 11.52c0 4.87 3.16 9 7.54 10.46.55.1.75-.24.75-.53v-1.86c-3.07.67-3.72-1.48-3.72-1.48-.5-1.28-1.23-1.62-1.23-1.62-1-.69.08-.67.08-.67 1.1.08 1.68 1.14 1.68 1.14.98 1.69 2.58 1.2 3.2.92.1-.72.39-1.2.7-1.48-2.45-.28-5.02-1.23-5.02-5.48 0-1.21.43-2.2 1.14-2.98-.12-.28-.5-1.41.1-2.94 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.43 3.02-1.13 3.02-1.13.6 1.53.22 2.66.1 2.94.71.78 1.14 1.77 1.14 2.98 0 4.26-2.58 5.2-5.03 5.47.4.34.75 1.01.75 2.04v3.03c0 .29.2.64.76.53 4.37-1.46 7.53-5.59 7.53-10.46C23.02 5.25 18.27.5 12 .5Z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/Qyyuu._" target="_blank" rel="noopener noreferrer" aria-label="Instagram Qyyuu._">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:rifqykurniawanftthillah42@gmail.com" aria-label="Kirim email ke Rifqy">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="m3.5 7 7.4 5.4a2 2 0 0 0 2.2 0L20.5 7"/></svg>
+              </a>
+            </li>
+          </ul>
+
+          <dl class="hero__facts">
+            <div class="fact-item">
+              <dt>Pendidikan</dt>
+              <dd>S1 Informatika UNSIKA (2024 - Sekarang)</dd>
+            </div>
+            <div class="fact-item">
+              <dt>Indeks Prestasi</dt>
+              <dd>IPK 3.90 / 4.00</dd>
+            </div>
+            <div class="fact-item">
+              <dt>Peran Organisasi</dt>
+              <dd>Ketua Divisi Edukasi HIMTIKA 2025 - 2026</dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="hero__portrait">
+          <div class="portrait-frame">
+            <img
+              src="assets/foto-rifqy.jpg"
+              alt="Foto profil Rifqy Kurniawan Fattahillah mengenakan kemeja putih"
+              width="708"
+              height="1024"
+              fetchpriority="high"
+              class="portrait-frame__img"
+            />
+          </div>
+          <figcaption class="portrait-frame__caption">
+            <span>Rifqy Kurniawan Fattahillah</span>
+            <span>Bekasi, Jawa Barat</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Tentang & Pendidikan -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">01</span>
+          <h2 class="section__title">Tentang <span class="text-accent">saya</span></h2>
+          <p class="section__sub">Latar belakang akademik, fokus teknis, dan aktivitas berbagi ilmu.</p>
+        </div>
+
+        <div class="about">
+          <div class="about__story">
+            <p class="about__lead">
+              Saya mahasiswa S1 Informatika di Universitas Singaperbangsa Karawang (UNSIKA)
+              yang berfokus pada pengembangan antarmuka web dan perancangan basis data relasional.
+            </p>
+            <p>
+              Dalam pengerjaan proyek kuliah maupun tim, saya terbiasa mengikuti alur
+              Software Development Life Cycle (SDLC) mulai dari pemetaan kebutuhan, perancangan
+              skema ERD dan normalisasi MySQL, implementasi modul CRUD berbasis PHP dan JavaScript,
+              hingga penyusunan antarmuka front-end responsif dengan HTML5, Tailwind CSS, dan Bootstrap.
+            </p>
+            <p>
+              Selain membangun aplikasi web, saya aktif mengajar mata kuliah <strong>Basis Data</strong>
+              pada program <strong>Study Club HIMTIKA UNSIKA</strong> serta mengoordinasikan berbagai
+              program pengembangan akademik mahasiswa Informatika.
+            </p>
+          </div>
+
+          <aside class="about__panel" aria-label="Ringkasan pendidikan dan pengajaran">
+            <div class="edu-block">
+              <span class="edu-block__label">Pendidikan</span>
+              <h3>Universitas Singaperbangsa Karawang (UNSIKA)</h3>
+              <p class="edu-block__meta">S1 Informatika (Computer Science) · 2024 - Sekarang</p>
+              <p class="edu-block__gpa">IPK: <strong>3.90 / 4.00</strong></p>
+              <p class="edu-block__courses">
+                Mata kuliah relevan: Database Systems &amp; Design, Data Structures &amp; Algorithms,
+                Software Engineering (SDLC), Web Programming, Object-Oriented Programming.
+              </p>
+            </div>
+
+            <div class="edu-block edu-block--divider">
+              <span class="edu-block__label">Pengajaran Akademik</span>
+              <h3>Pengajar Mata Kuliah Basis Data</h3>
+              <p class="edu-block__meta">Study Club HIMTIKA UNSIKA</p>
+              <p class="edu-block__courses">
+                Membimbing mahasiswa memahami konsep dasar basis data relasional, pemodelan ERD,
+                normalisasi tabel, dan penulisan query SQL secara terstruktur dalam pertemuan rutin.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keahlian -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">02</span>
+          <h2 class="section__title">Keahlian <span class="text-accent">teknis</span></h2>
+          <p class="section__sub">Teknologi dan pendekatan kerja yang saya gunakan dalam proyek web dan basis data.</p>
+        </div>
+
+        <div class="capabilities">
+          <div class="cap-row">
+            <div class="cap-row__title">
+              <h3>Front-End Web Development</h3>
+              <p>Membangun tata letak antarmuka responsif dan komponen navigasi modular lintas perangkat.</p>
+            </div>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Tailwind CSS</li>
+              <li>Bootstrap CSS</li>
+            </ul>
+          </div>
+
+          <div class="cap-row">
+            <div class="cap-row__title">
+              <h3>Basis Data &amp; Rekayasa Sistem</h3>
+              <p>Merancang skema relasional (ERD), normalisasi, query SQL, dan logika bisnis back-end.</p>
+            </div>
+            <ul class="tags">
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>ERD &amp; Normalization</li>
+              <li>SQL Querying</li>
+              <li>Data Structures</li>
+              <li>SDLC</li>
+            </ul>
+          </div>
+
+          <div class="cap-row">
+            <div class="cap-row__title">
+              <h3>Alat &amp; Kolaborasi</h3>
+              <p>Mengelola versi kode proyek tim, menyusun desain UI/UX di Figma, dan menguji alur fungsional.</p>
+            </div>
+            <ul class="tags">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Figma</li>
+              <li>Visual Studio Code</li>
+              <li>Node.js</li>
+              <li>NPM</li>
+            </ul>
+          </div>
+
+          <div class="cap-row">
+            <div class="cap-row__title">
+              <h3>Soft Skills &amp; Kepemimpinan</h3>
+              <p>Mengelola program kerja organisasi, mengajar materi basis data, dan kolaborasi lintas divisi.</p>
+            </div>
+            <ul class="tags">
+              <li>Analytical Problem Solving</li>
+              <li>Technical Communication</li>
+              <li>Cross-Functional Collaboration</li>
+              <li>Time Management</li>
+              <li>Organizational Leadership</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengalaman Kerja -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">03</span>
+          <h2 class="section__title">Pengalaman <span class="text-accent">kerja &amp; proyek</span></h2>
+          <p class="section__sub">Proyek pengembangan website dan sistem manajemen data yang pernah saya kerjakan.</p>
+        </div>
+
+        <div class="work-grid">
+          <!-- Featured: Servia -->
+          <article class="work-card work-card--featured">
+            <div class="work-card__body">
+              <div class="work-card__meta">
+                <span class="work-card__tag">Front-End Development</span>
+                <span class="work-card__status">Live Website</span>
+              </div>
+              <h3 class="work-card__title">Servia: Sistem Layanan Palugada</h3>
+              <p class="work-card__desc">
+                Membuat website Front-End pada website Servia sistem layanan palugada. Mengembangkan
+                antarmuka responsif dan struktur komponen UI modular dengan alur navigasi yang jelas
+                untuk layanan pendampingan akademik dan pemesanan katering.
+              </p>
+              <ul class="tags">
+                <li>HTML5</li>
+                <li>Tailwind CSS</li>
+                <li>Bootstrap CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="work-card__links">
+                <a href="https://servia.my.id/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+                  Kunjungi Website Servia
+                </a>
+              </div>
+            </div>
+            <div class="work-card__aside" aria-hidden="true">
+              <div class="work-preview">
+                <span class="work-preview__domain">servia.my.id</span>
+                <p class="work-preview__summary">Dual-Service Platform UI</p>
+                <ul class="work-preview__points">
+                  <li>Antarmuka responsif lintas perangkat</li>
+                  <li>Komponen UI modular siap integrasi API</li>
+                  <li>Alur navigasi layanan terpadu</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Work 2: Manajemen Lab Komputer / Simlab -->
+          <article class="work-card">
+            <div class="work-card__body">
+              <div class="work-card__meta">
+                <span class="work-card__tag">CRUD &amp; Sistem Informasi</span>
+              </div>
+              <h3 class="work-card__title">Sistem Manajemen Laboratorium Komputer</h3>
+              <p class="work-card__desc">
+                Membantu membuat sistem CRUD pada manajemen lokasi penyimpanan di projek website
+                sistem manajemen Laboratorium Komputer (Simlab), mencakup perancangan skema basis
+                data relasional MySQL, validasi input, dan pencatatan status aset laboratorium.
+              </p>
+              <ul class="tags">
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>JavaScript</li>
+                <li>Bootstrap CSS</li>
+              </ul>
+              <div class="work-card__links">
+                <a href="https://github.com/anisadiyahayu/ProjekUASPBW" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm">
+                  Repositori GitHub
+                </a>
+                <a href="https://www.figma.com/make/mRIKAtbcPTlyWXOGZOJskT/Modern-Campus-Lab-Dashboard-UI?fullscreen=1&t=yo2O9tr5CB5JOBJb-1&code-node-id=0-9" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm">
+                  Desain Figma UI
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Work 3: Administrasi Desa -->
+          <article class="work-card">
+            <div class="work-card__body">
+              <div class="work-card__meta">
+                <span class="work-card__tag">Front-End &amp; UI/UX</span>
+              </div>
+              <h3 class="work-card__title">Website Pengelolaan Administrasi Desa</h3>
+              <p class="work-card__desc">
+                Membantu membuat projek kelompok dalam Front-end website pengelolaan administrasi
+                desa dengan UI/UX sederhana agar perangkat dan warga desa dapat mengakses alur
+                layanan surat serta pendataan secara langsung dan mudah dipahami.
+              </p>
+              <ul class="tags">
+                <li>Front-End Web</li>
+                <li>UI/UX Sederhana</li>
+                <li>Figma</li>
+                <li>GitHub</li>
+              </ul>
+              <div class="work-card__links">
+                <a href="https://github.com/Hazsaja/projek_rpl.git" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm">
+                  Repositori GitHub
+                </a>
+                <a href="https://www.figma.com/design/HHxqlbypolmhLxYG388uK5/Untitled?node-id=38-54&t=J2L5QsYquMfykvUc-1" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm">
+                  Tampilan Figma
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengalaman Organisasi -->
+    <section class="section section--alt" id="organization">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">04</span>
+          <h2 class="section__title">Pengalaman <span class="text-accent">organisasi</span></h2>
+          <p class="section__sub">Kontribusi kepemimpinan, kepanitiaan, pengelolaan program kerja, dan pengajaran di HIMTIKA UNSIKA.</p>
+        </div>
+
+        <div class="org-layout">
+          <div class="timeline">
+            <article class="timeline__item">
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__content">
+                <div class="timeline__head">
+                  <div>
+                    <h3 class="timeline__role">Ketua Divisi Edukasi</h3>
+                    <p class="timeline__company">Himpunan Mahasiswa Informatika Unsika (HIMTIKA UNSIKA)</p>
+                  </div>
+                  <span class="timeline__period">2025 - 2026</span>
+                </div>
+                <p class="timeline__desc">
+                  Memimpin divisi Edukasi dan mengoordinasikan program kerja pengembangan akademik
+                  serta prestasi mahasiswa Informatika.
+                </p>
+                <ul class="timeline__list">
+                  <li>Memanajemen, mengelola, dan mengontrol program kerja CnC, Pekan IT, dan Study Club pada periode Januari 2026 - November 2026.</li>
+                  <li>Mengarahkan eksekusi tim lintas agenda dan penyusunan kurikulum pembelajaran mahasiswa.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__content">
+                <div class="timeline__head">
+                  <div>
+                    <h3 class="timeline__role">Anggota Divisi Acara - LKMM Pra-dasar</h3>
+                    <p class="timeline__company">HIMTIKA UNSIKA (Kaderisasi Prodi Informatika)</p>
+                  </div>
+                  <span class="timeline__period">Jul 2025 - Agu 2025</span>
+                </div>
+                <p class="timeline__desc">
+                  Menjadi anggota divisi acara pada kegiatan LKMM Pra-dasar yang merupakan kegiatan
+                  kaderisasi lingkup program studi Informatika.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__content">
+                <div class="timeline__head">
+                  <div>
+                    <h3 class="timeline__role">Ketua Pelaksana Study Club &amp; Pengajar Basis Data</h3>
+                    <p class="timeline__company">HIMTIKA UNSIKA</p>
+                  </div>
+                  <span class="timeline__period">Mei 2025 - Okt 2025</span>
+                </div>
+                <p class="timeline__desc">
+                  Menjabat sebagai ketua pelaksana program kerja Study Club yang berfokus pada
+                  pengembangan potensi akademik mahasiswa, sekaligus mengajar mata kuliah Basis Data.
+                </p>
+                <ul class="timeline__list">
+                  <li>Mengelola jadwal pertemuan rutin mingguan, mentor teknis, dan materi pembelajaran.</li>
+                  <li>Mengajar mata kuliah Basis Data pada kegiatan Study Club untuk memperkuat pemahaman perancangan data dan SQL.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__content">
+                <div class="timeline__head">
+                  <div>
+                    <h3 class="timeline__role">Anggota Divisi Konsumsi - HIMTIKA Goes To Company</h3>
+                    <p class="timeline__company">HIMTIKA UNSIKA (Studi Banding)</p>
+                  </div>
+                  <span class="timeline__period">Feb 2025 - Mar 2025</span>
+                </div>
+                <p class="timeline__desc">
+                  Menjadi anggota divisi konsumsi pada kegiatan HIMTIKA Goes To Company yang merupakan
+                  kegiatan studi banding dengan perusahaan ataupun mitra.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <div class="timeline__content">
+                <div class="timeline__head">
+                  <div>
+                    <h3 class="timeline__role">Anggota Divisi Edukasi</h3>
+                    <p class="timeline__company">Himpunan Mahasiswa Informatika Unsika (HIMTIKA UNSIKA)</p>
+                  </div>
+                  <span class="timeline__period">2024 - 2025</span>
+                </div>
+                <p class="timeline__desc">
+                  Menjabat sebagai anggota Divisi Edukasi dalam mendukung perencanaan dan pelaksanaan
+                  lokakarya akademik, pendampingan mahasiswa, serta kegiatan edukasi departemen.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <aside class="programs-panel" aria-label="Program kerja Divisi Edukasi yang dikelola">
+            <h3 class="programs-panel__heading">Program Kerja Dikelola (Jan 2026 - Nov 2026)</h3>
+            <p class="programs-panel__intro">
+              Sebagai Ketua Divisi Edukasi HIMTIKA UNSIKA, saya memanajemen, mengelola, dan
+              mengontrol tiga program kerja utama:
+            </p>
+
+            <div class="program-item">
+              <h4>Create and Compete (CnC)</h4>
+              <p>
+                Program kerja yang mewadahi bakat mahasiswa dan mewujudkan bakat tersebut hingga ke
+                tahap penyaluran perlombaan ke ranah informatika dengan skala nasional maupun lokal
+                lingkup kampus.
+              </p>
+            </div>
+
+            <div class="program-item">
+              <h4>Pekan IT</h4>
+              <p>Program kerja yang memiliki 3 agenda utama:</p>
+              <ul class="program-item__list">
+                <li>Perlombaan lingkup prodi Informatika Unsika (SEMANTIK).</li>
+                <li>Perlombaan skala nasional (NIC: National Informatics Competition).</li>
+                <li>Seminar dan pameran IT (Seminar dan Pameran Pekan IT).</li>
+              </ul>
+            </div>
+
+            <div class="program-item">
+              <h4>Study Club</h4>
+              <p>
+                Program kerja yang berfokus mengembangkan landasan dasar dalam ranah IT dengan
+                pertemuan rutin setiap pekan, termasuk penyampaian materi mata kuliah Basis Data.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV Summary -->
+    <section class="section" id="cv">
+      <div class="container">
+        <div class="cv-banner">
+          <div class="cv-banner__info">
+            <span class="section__index">05</span>
+            <h2 class="section__title">Curriculum <span class="text-accent">Vitae</span></h2>
+            <p class="cv-banner__desc">
+              Ringkasan lengkap pendidikan, proyek teknis, kepemimpinan HIMTIKA UNSIKA, serta
+              keahlian PHP, SQL, dan Front-End Web tersedia dalam format CV siap cetak ukuran A4.
+            </p>
+
+            <dl class="cv-highlights">
+              <div>
+                <dt>Nama Lengkap</dt>
+                <dd>Rifqy Kurniawan Fattahillah</dd>
+              </div>
+              <div>
+                <dt>Institusi</dt>
+                <dd>S1 Informatika UNSIKA (IPK 3.90 / 4.00)</dd>
+              </div>
+              <div>
+                <dt>Fokus Utama</dt>
+                <dd>Front-End Web, PHP, MySQL, SDLC</dd>
+              </div>
+              <div>
+                <dt>Pengalaman Mengajar</dt>
+                <dd>Basis Data di Study Club HIMTIKA</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="cv-banner__actions">
+            <a href="cv.html" class="btn btn--primary">Buka CV Lengkap</a>
+            <a href="cv.html" target="_blank" rel="noopener noreferrer" class="btn btn--outline">Buka di Tab Baru &amp; Simpan PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section class="section section--alt contact" id="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__info">
+            <span class="section__index">06</span>
+            <h2 class="section__title">Mari <span class="text-accent">terhubung</span></h2>
+            <p class="contact__desc">
+              Terbuka untuk kolaborasi proyek web, pengembangan sistem berbasis data, maupun diskusi
+              seputar kegiatan akademik Informatika.
+            </p>
+
+            <ul class="contact__list">
+              <li>
+                <span class="contact__icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="m3.5 7 7.4 5.4a2 2 0 0 0 2.2 0L20.5 7"/></svg>
+                </span>
+                <div>
+                  <span class="contact__label">Email</span>
+                  <a href="mailto:rifqykurniawanftthillah42@gmail.com" class="contact__value">rifqykurniawanftthillah42@gmail.com</a>
+                </div>
+                <button type="button" class="copy-btn" data-copy="rifqykurniawanftthillah42@gmail.com" aria-label="Salin alamat email">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+                </button>
+              </li>
+
+              <li>
+                <span class="contact__icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <div>
+                  <span class="contact__label">Lokasi</span>
+                  <span class="contact__value">Bekasi, Jawa Barat</span>
+                </div>
+              </li>
+
+              <li>
+                <span class="contact__icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+                </span>
+                <div>
+                  <span class="contact__label">Instagram</span>
+                  <a href="https://instagram.com/Qyyuu._" target="_blank" rel="noopener noreferrer" class="contact__value">@Qyyuu._</a>
+                </div>
+              </li>
+
+              <li>
+                <span class="contact__icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.25.98 11.52c0 4.87 3.16 9 7.54 10.46.55.1.75-.24.75-.53v-1.86c-3.07.67-3.72-1.48-3.72-1.48-.5-1.28-1.23-1.62-1.23-1.62-1-.69.08-.67.08-.67 1.1.08 1.68 1.14 1.68 1.14.98 1.69 2.58 1.2 3.2.92.1-.72.39-1.2.7-1.48-2.45-.28-5.02-1.23-5.02-5.48 0-1.21.43-2.2 1.14-2.98-.12-.28-.5-1.41.1-2.94 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.43 3.02-1.13 3.02-1.13.6 1.53.22 2.66.1 2.94.71.78 1.14 1.77 1.14 2.98 0 4.26-2.58 5.2-5.03 5.47.4.34.75 1.01.75 2.04v3.03c0 .29.2.64.76.53 4.37-1.46 7.53-5.59 7.53-10.46C23.02 5.25 18.27.5 12 .5Z"/></svg>
+                </span>
+                <div>
+                  <span class="contact__label">GitHub</span>
+                  <a href="https://github.com/Qyyuuu" target="_blank" rel="noopener noreferrer" class="contact__value">github.com/Qyyuuu</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact__form" id="contactForm" novalidate>
+            <div id="formSummary" class="form-summary" role="alert" tabindex="-1" hidden></div>
+
+            <div class="field">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Nama lengkap Anda" autocomplete="name" aria-describedby="error-name" required />
+              <span class="field__error" id="error-name" data-error-for="name"></span>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" aria-describedby="error-email" required />
+              <span class="field__error" id="error-email" data-error-for="email"></span>
+            </div>
+
+            <div class="field">
+              <label for="subject">Subjek</label>
+              <input type="text" id="subject" name="subject" placeholder="Contoh: Kolaborasi pengembangan website" aria-describedby="error-subject" required />
+              <span class="field__error" id="error-subject" data-error-for="subject"></span>
+            </div>
+
+            <div class="field">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesan atau detail kebutuhan Anda..." aria-describedby="error-message" required></textarea>
+              <span class="field__error" id="error-message" data-error-for="message"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              Kirim Pesan via Email
+            </button>
+            <p class="form__note">Pesan akan dibuka di aplikasi email Anda. Tidak ada data yang disimpan di situs ini.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="#home">rifqy<span class="brand__dot">.</span></a>
+        <p>Portofolio Web &amp; Database Developer · Bekasi, Jawa Barat.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Navigasi footer">
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#experience">Pengalaman Kerja</a>
+        <a href="#organization">Organisasi</a>
+        <a href="cv.html">CV</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+
+      <div class="footer__meta">
+        <p>&copy; <span id="year">2026</span> Rifqy Kurniawan Fattahillah.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="to-top" id="toTop" aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
